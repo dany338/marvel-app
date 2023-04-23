@@ -324,17 +324,20 @@ export const ContentMain = styled.div`
 `;
 
 export const ContentFooter = styled.div`
-  /* flex-direction: row; */
-  /* 
-  gap: 1rem; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center; */
   padding: 3.375rem 5rem;
 
   .slick-next:before, .slick-prev:before {
     color: #F4BC00;
+  }
+
+  .slick-track {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 100%;
+    gap: 10px;
   }
 
   @media screen and (max-width: 480px) {
